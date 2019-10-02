@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("paisagem4.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+#cadastro{
+    background: rgba(0,248, 236, 0.1);
+    width: 700px;
+    height: 550px;
+    margin-top: 5%;
+    }
+
+.campos{
+    padding: 30px;
+    margin: 0;
+    width: 400px;
+    height: 650px;
+}
+
+.caixas{
+    margin-top: 80px;
+    
+}
+
+.campos input{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    width: 90%;
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.678);
+    outline: none;
+    
+}
+
+.campos input:nth-child(10){
+    display: inline-block;
+    width: 73%;
+   
+}
+
+.campos input:nth-child(11){
+    display: inline-block;
+    width: 15%;
+
+}
+
+#btn_cadastro{
+    position: relative;
+    padding: 5px;
+    width: 90px;
+    border : solid 1px rgba(0,248, 236, 1);
+    border-radius: 7px;
+    color: #fff;
+    box-sizing: border-box;
+    background: transparent;
+    cursor: pointer;
+}
+
+#btn_cadastro:hover{
+    background: rgba(0,248, 236, 1);
+    transition: all .8s linear;    
+}
+
+#alerta{
+    display: none;
+    font-family:serif;
+    font-weight:30;    
+    color: red;
+
+    }
+    
+.logo{
+    position:absolute;
+    width: 300px;
+    margin-left: 28%;
+    margin-top: 0%;
+    
+    }
