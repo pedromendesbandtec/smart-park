@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+}
+
+a{
+    color: white;
+    margin-top: 27px;
+}
+
+.logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.menu2 {
+    margin-right: 40px;
+    font-size: 20px;
+}
+
+.menu {
+    width:100VW;
+    height: 80px;
+    background-color: black;
+}
+
+.menu ul{
+    float: left;
+    height: 30px;
+    margin-top: 27px;
+    width: 50vw;
+    margin-left: 25vw;
+}
+
+.menu li{
+    margin-top: auto;
+    width: auto;
+    margin-left: 8vw;
+    color: white;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.slide-cont {
+    width: auto;
+    height: auto;
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 0; 
+    overflow: hidden;
+}
+
+.slide-cont ul {
+    display: flex;
+    padding: 0;
+    width: 300%;
+
+    animation: car 8s infinite alternate linear;
+}
+
+.slide-cont li {
+    width: 100%;
+    list-style: none;
+
+}
+
+.slide-cont img {
+    width: 100%;
+}
+
+@keyframes car {
+    0% {margin-left: 0;}
+    23% {margin-left: 0;}
+    43% {margin-left: -100%;}
+    63% {margin-left: -100%;}
+    83% {margin-left: -200%;}
+    100% {margin-left: -200%;}
+}
+
+.body-text {
+    background-color: blueviolet;
+}
+
+.footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.rodape {
+    background-color: crimson;
+    height: 50px;
+}
+
+.p-rodape {
+    text-align: center;
+}
+
