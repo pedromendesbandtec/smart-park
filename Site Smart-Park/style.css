@@ -91,8 +91,12 @@ a:hover{
     100% {margin-left: -200%;}
 }
 
+.Text-empresa{
+    height: 500px;
+}
 .Text-empresa  h1{
     color: rgb(0, 187, 194);
+    font-size: 50px;
 }
 
 .Text-empresa p{
@@ -102,17 +106,32 @@ a:hover{
     font-size: 20pt;
 }
 
-.footer {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
+.Text-portifolio{
+    height: 500px;
 }
-.rodape {
-    background-color: crimson;
-    height: 50px;
+.Text-portifolio h1{
+    color: #00bbc2;
+    font-size: 50px;
 }
 
-.p-rodape {
+.Text-portifolio p{
+    width: 60%;
     text-align: center;
+    margin-left: 25%;
+    font-size: 20pt;
 }
 
+.Text-contato p{
+    width: 60%;
+    text-align: center;
+    margin-left: 25%;
+    font-size: 20pt;
+}
+
+.Text-contato h1{
+color: rgb(0, 187, 194);
+font-size: 50px; 
+}
+.Text-contato{
+    height: 500px;
+}
