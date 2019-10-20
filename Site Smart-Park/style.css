@@ -28,7 +28,7 @@ a:hover{
 }
 .menu2 {
     margin-right: 40px;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .menu {
@@ -48,10 +48,10 @@ a:hover{
 .menu li{
     margin-top: auto;
     width: auto;
-    margin-left: 8vw;
+    margin-left: 7vw;
     color: white;
     display: inline-block;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .slide-cont {
@@ -69,7 +69,7 @@ a:hover{
     padding: 0;
     width: 300%;
 
-    animation: car 8s infinite alternate linear;
+    animation: car 8.5s infinite alternate linear;
 }
 
 .slide-cont li {
