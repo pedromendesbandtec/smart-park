@@ -1,0 +1,53 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    overflow-y:hidden;
+    overflow-x: hidden;
+}
+
+.logo{
+    position:relative;
+    left:85vh;
+
+}
+.topo{
+    width: 100vw;
+    background-color: rgb(26, 24, 24);
+    
+}
+.perfil{
+    width: 40vh;
+    background-color: rgb(110, 109, 107);
+    height: 1000vw;
+    margin-top: 0px;
+}
+
+.foto_perfil{
+    width: 110px;
+    height: 110px;
+    background-color: aqua;
+    border-radius: 100px;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 75px;
+}
+.foto_perfil p{
+    margin-top: 150px;
+    font-weight: bolder;
+    color: white;
+}
+.foto_perfil a{
+    text-decoration: none;
+    color: rgb(168, 10, 10);
+    font-weight: 100;
+    
+}
+.icone {
+    width: 110px;
+    height: 110px;
+    border-radius: 100px;
+    position: absolute;
+
+}
