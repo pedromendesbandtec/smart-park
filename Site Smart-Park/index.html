@@ -25,8 +25,8 @@
                 </ul>
 
                 <div class="menu2">
-                    <a href="" style="float: right; text-decoration: none; margin-left: 20px;"><div>Cadastre-se</div></a>
-                    <a href="" style="float: right; text-decoration: none;"><div>Entrar</div></a>
+                    <a href="cadastro.smartpark/cadastro_smart.html" style="float: right; text-decoration: none; margin-left: 20px;"><div>Cadastre-se</div></a>
+                    <a href="login.smartpark/login_smart.html" style="float: right; text-decoration: none;"><div>Entrar</div></a>
                 </div>
             </div>
 
@@ -50,10 +50,10 @@
         <img src="empresa.png" alt="" height="250px" style="float: left; margin-left: 6%;">
 
         <p>
-            A SmartParking desenvolveu uma ferramenta inteligente de monitoramento e gestão para estacionamentos.
-            São sensores que serão instalados localmente, coletando os dados por  vaga e enviando a um banco de dados.
+            A SmartParking desenvolveu uma ferramenta inteligente de monitoramento e gestão para estacionamentos (SMCV).
+            Sensores serão instalados localmente, coletando os dados por  vaga e enviando a um banco de dados.
             Nossa solução irá transformar os dados coletados em conforto e agilidade, tanto para quem consome e para quem fornece. 
-            A missão do TechParking é fornecer as informações certas de forma ágil e pratica para que nosso cliente obtenha as melhores estratégias de mercado para o seu negócio.
+            A missão do SMCV é fornecer as informações certas de forma ágil e pratica para que nosso cliente obtenha as melhores estratégias de mercado para o seu negócio.
             Um serviço eficiente garante o melhor feedback dos clientes.
         </p>
     </div>
@@ -63,32 +63,32 @@
         <center><img src="decorative-line.png" alt="" width="420px" height="50px"></center>
 
         <center><h1>PORTIFÓLIO</h1></center>
-        <p>
-            Nossa equipe é responsável por mais de 1000 instalações pelo Brasil todo! 
-            E também responsáveis pelos estacionamentos mais tecnológicos do país! 
-            Contratando nosso sistema, você trará mais conforto aos seus clientes, 
-            e terá dados em suas mãos para criar as estratégias mais precisas para o bom funcionamento do seu estacionamento!
-        </p>
-        <div class="trabalho1">
+            <p>
+                Nossa equipe é responsável por mais de 1000 instalações pelo Brasil todo! 
+                E também responsáveis pelos estacionamentos mais tecnológicos do país! 
+                Contratando nosso sistema, você trará mais conforto aos seus clientes, 
+                e terá dados em suas mãos para criar as estratégias mais precisas para o bom funcionamento do seu estacionamento!
+            </p>
+            <div class="trabalho1">
                 <img src="./port1.png" alt="aeroporto-de-guarulhos" width="600px; " >
             </div>
             <div class="text_portifolio1">
               Em um de nossos maiores serviços realizados, localizado no Aeroporto Internacional de Guarulhos, 
-            podemos ver a quantidade de usuários que optam por estacionamentos com nosso sistema, 7
+            podemos ver a quantidade de usuários que optam por estacionamentos com nosso sistema,
             visando a maior comodidade e modernidade que proporcionamos!
             <br> <br> <br>
-            <button style="height: 75px; width: 290px; font-size: 20pt; color: rgb(0, 187, 194);">Ver projeto</button>
-            </div>
+            <button onclick="proj()" style="height: 75px; width: 290px; font-size: 20pt; color: rgb(0, 187, 194); margin-left: 100px;">Ver projeto</button>
+    </div>
 
     <div class="trabalho2">
         <img src="./port2.png" alt="shopping" width="600px"> 
     </div>
     <div class="text_portifolio2">
-        Neste outro serviço, em um shopping de alto padrão e elevado movimento de automóveis da Zona Norte de São Paulo,
+        Neste outro serviço, em um shopping de alto padrão e elevado movimento de automóveis em Fortaleza - CE,
          notamos a organização de fluxo que a equipe contratante de nossos serviços realizou a partir de nossas tecnológicas telas, 
          onde constam as vagas disponíveis do local. 
          <br> <br> <br>
-         <button style="height: 75px; width: 290px; font-size: 20pt; color: rgb(0, 187, 194); margin-left: 50px;">Ver projeto</button>
+         <button onclick="proje()" style="height: 75px; width: 290px; font-size: 20pt; color: rgb(0, 187, 194); margin-left: 150px;">Ver projeto</button>
     </div>
         
     </div>
@@ -114,7 +114,38 @@
     </div>
 
     <div class="rodape">
-Colocar alguma coisa que o Malan quer! kkkkkk
+
+        <br>
+
+        <a href=""><img src="zap.png" alt="" style="float: right; margin: 30px 0 0 250px; position: absolute;" height="60px" width="60px"></a>
+        <a href=""><img src="twit.png" alt="" style="float: right; margin: 30px 0 0 325px; position: absolute;" height="60px" width="60px"></a>
+        <a href=""><img src="insta.png" alt="" style="float: right; margin: 30px 0 0 400px; position: absolute;" height="60px" width="60px"></a>
+        <a href=""><img src="face.png" alt="" style="float: right; margin: 30px 0 0 475px; position: absolute;" height="60px" width="60px"></a>
+
+        <p>Conectar-se</p>
+        <label> Receber notícias e informações sobre <br>
+            estacionamentos com nossa tecnologia
+        </label>
+
+        <br><br>
+        
+        <input id="newsletter" placeholder="Seu Email">
+        <button onclick="news()">Enviar</button>
+        
     </div>
 </body>
 </html>
+
+<script>
+    function news(){
+        newsletter.value = ''
+    }
+
+    function proj(){
+        location.href="https://enzopark.com/estacionamento-aeroporto-de-guarulhos/"
+    }
+
+    function proje(){
+        location.href="https://www.northshoppingjoquei.com.br/card/estacionamento-north-shopping-joquei"
+    }
+</script>
