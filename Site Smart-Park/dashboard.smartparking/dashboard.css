@@ -71,3 +71,12 @@ body{
 .conteudo p{
     white-space: normal;
 }
+.conteudo button{
+    width: 150px;
+    padding: 7px;
+    background-color: rgba(2, 255, 234, 0.719);
+    border-radius: 10px;
+    outline: none;
+    margin-left: 40px;
+    margin-right: 40px;
+}
