@@ -50,17 +50,18 @@ function cadastrar(){
                         endereco.value!= '' &&
                         telefone.value != '' &&
                         numero.value != ''){
-                            mensagem.innerHTML='Você foi cadastrado com sucesso';
-                            senha.value='';
-                            confirmar_senha.value ='';
-                            email.value='';
-                            nome.value = '';
-                            endereco.value= '';
-                            telefone.value = '';
-                            numero.value = '';
-                            cpf.value='';
+                            alert('Você foi cadastrado com sucesso');
+                            window.location.href = "../login.smartpark/login_smart.html";
+                            // senha.value='';
+                            // confirmar_senha.value ='';
+                            // email.value='';
+                            // nome.value = '';
+                            // endereco.value= '';
+                            // telefone.value = '';
+                            // numero.value = '';
+                            // cpf.value='';
                             	
-// window.location.href = "file:///C:/Users/tosil/Desktop/smart-park/Site%20Smart-Park/index.html";
+ 
                            
 
                         }
