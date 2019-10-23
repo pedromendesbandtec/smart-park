@@ -1,10 +1,12 @@
+html{
+    overflow-x: hidden;
+}
+
+
 body{
     margin: 0px;
     padding: 0px;
-}
-html{
-    overflow-y:hidden;
-    overflow-x: hidden;
+    background-color: whitesmoke;
 }
 
 .logo{
@@ -13,15 +15,16 @@ html{
 
 }
 .topo{
-    width: 100vw;
+    width: auto;
     background-color: rgb(26, 24, 24);
     
 }
 .perfil{
+    float: right;
     width: 40vh;
     background-color: rgb(110, 109, 107);
-    height: 1000vw;
-    margin-top: 0px;
+    height: 30vw;
+    margin: 10px 10px 0 0;
 }
 
 .foto_perfil{
@@ -34,20 +37,38 @@ html{
     margin-left: 75px;
 }
 .foto_perfil p{
-    margin-top: 150px;
+    margin-top: 115px;
     font-weight: bolder;
     color: white;
 }
+
 .foto_perfil a{
     text-decoration: none;
-    color: rgb(168, 10, 10);
-    font-weight: 100;
+    color: white;
+    font-weight: bolder;
     
 }
+.foto_perfil a:hover{
+    text-decoration: none;
+    color: rgb(168, 10, 10);
+    font-weight: bolder;
+    
+}
+
 .icone {
     width: 110px;
     height: 110px;
     border-radius: 100px;
     position: absolute;
 
+}
+
+.conteudo{
+    float: left;
+    width: 150vh;
+    height: 40vw;
+    margin: 10px 0 0 10px;
+}
+.conteudo p{
+    white-space: normal;
 }
