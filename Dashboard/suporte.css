@@ -1,0 +1,60 @@
+
+
+   html {overflow-x: hidden;
+   }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    background: #f1f2f6;
+}
+
+
+
+.configuracao {
+    position: fixed;
+    top: 0;
+    float: left;
+    background: #55efc4;
+    padding: 5px;
+    height: 100%;
+    width: 17%;
+    font-size: 20px;
+}
+
+
+.configuracao ul img {
+    width: 30px;
+    height: 30px;
+}
+
+
+.configuracao ul {
+    list-style: none;
+    padding-left: 12px;
+}
+.configuracao ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.div_total{
+    margin-left: 18%;
+}
+
+.nome_painel {
+    margin: 10px 30px 10px 30px;
+    padding: 15px 15px 15px 15px;
+    width: 74vw;
+    height: 8vh;
+    background: #55efc4;
+    border-radius: 4px;
+}
+
+.form {
+    margin-left: 2%;
+    width: 94%;
+    height: 500px;
+}

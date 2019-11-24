@@ -1,0 +1,88 @@
+
+
+   html {overflow-x: hidden;
+   }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    background: #f1f2f6;
+}
+
+
+
+.configuracao {
+    position: fixed;
+    top: 0;
+    float: left;
+    background: #55efc4;
+    padding: 5px;
+    height: 100%;
+    width: 17%;
+    font-size: 20px;
+}
+
+
+.configuracao ul img {
+    width: 30px;
+    height: 30px;
+}
+
+
+.configuracao ul {
+    list-style: none;
+    padding-left: 12px;
+}
+
+
+
+.div_total{
+    margin-left: 18%;
+}
+
+
+
+
+.grafico1 {
+    border: solid;
+    float: left;
+    width: 550px;
+    height: 600px;
+    margin-top: 10px;
+    margin-left: 30px;
+    border: groove;
+    padding: 5px;    
+    background: #ffffff;
+
+}
+    
+    
+    .grafico2 {
+    border: solid;
+    float: left;
+    width: 400px;
+    height: 200px;
+    margin-top: 10px;
+    margin-left: 30px;
+    border: groove;
+    padding: 5px;
+    background: #ffffff;
+
+}
+
+    
+    .grafico3 {
+    border: solid;
+    float: left;
+    width: 400px;
+    height: 200px;
+    margin-top: 10px;
+    margin-left: 30px;
+    border: groove;
+    padding: 5px;
+    background: #ffffff;
+
+}
+    
+

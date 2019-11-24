@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Graficos</title>
+    <link rel="stylesheet" href="style_graficos.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawVisualization);
+
+      function drawVisualization() {
+        // Some raw data (not necessarily accurate)
+        var data = google.visualization.arrayToDataTable([
+          ['Month', 'Bolivia', 'Ecuador', 'Madagascar', 'Papua New Guinea', 'Rwanda', 'Average'],
+          ['2004/05',  165,      938,         522,             998,           450,      614.6],
+          ['2005/06',  135,      1120,        599,             1268,          288,      682],
+          ['2006/07',  157,      1167,        587,             807,           397,      623],
+          ['2007/08',  139,      1110,        615,             968,           215,      609.4],
+          ['2008/09',  136,      691,         629,             1026,          366,      569.6]
+        ]);
+
+        var options = {
+          title : 'Monthly Coffee Production by Country',
+          vAxis: {title: 'Cups'},
+          hAxis: {title: 'Month'},
+          seriesType: 'bars',
+          series: {5: {type: 'line'}}        };
+
+        var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Work',     11],
+          ['Eat',      2],
+          ['Commute',  2],
+          ['Watch TV', 2],
+          ['Sleep',    7]
+        ]);
+
+        var options = {
+          title: 'My Daily Activities',
+          is3D: true,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+        chart.draw(data, options);
+      }
+    </script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Work',     11],
+          ['Eat',      2],
+          ['Commute',  2],
+          ['Watch TV', 2],
+          ['Sleep',    7]
+        ]);
+
+        var options = {
+          title: 'My Daily Activities',
+          is3D: true,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d2'));
+        chart.draw(data, options);
+      }
+    </script>
+</head>
+<body>
+    
+
+  <div id="div_configuracao" class="configuracao">
+
+       <center> <img src="perfil.png" alt="" width="100px" height="100px" style="margin-top: 50px"> </center><br><br><br>
+      <ul>
+        <li> <a href="dashboard.html"><img src="icone_painel.png" alt=""> Painel de controle</li></a> <br>
+        <li> <a href="perfil.html"><img src="icone_perfil.png" alt=""> Perfil</li></a> <br>
+        <li> <a href="graficos.html"><img src="icone_grafico.png" alt=""> Gráficos</li></a> <br>
+        <li> <a href="suporte.html"><img src="icone_suporte.png" alt=""> Suporte</li></a> <br>
+        <li> <a href=""><img src="icone_sair.png" alt=""> Sair</li></a>
+     </ul>
+    </div>
+
+
+<div class="div_total">
+    
+    
+    <div class="nome_painel">
+      <center><h3>GRÁFICOS</h3></center>
+    </div>
+
+
+    
+    <div id="chart_div" style="width: 93%; height: 500px;" class="grafico1">
+    </div>
+
+
+
+    <div id="piechart_3d" alt="" style="width: 500px; height: 400px;" class="grafico2">
+    </div>
+
+
+
+    <div id= "piechart_3d2" alt="" style="width: 500px; height: 400px;" class="grafico3">
+    </div>
+
+
+
+
+   <div class="grafico4">
+<img src="media-mensal.jpeg" alt="">
+
+    </div>
+
+
+
+
+    <div class="grafico5">
+      <img src="movimentacao-diaria.jpeg" alt="">
+    </div>
+
+
+    <div class="grafico6">
+
+<img src="movimentacao-horario-diario.jpeg" alt="">
+
+    </div>
+
+
+    <div class="grafico7">
+      <img src="movimentacao-horario-mensal.jpeg" alt="">
+    </div>
+
+
+
+
+
+
+
+
+
+</div>
+
+</body>
+</html>

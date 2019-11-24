@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Painel de Controle</title>
+  <link rel="stylesheet" href="Dashboard.css">
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load('current', {'packages':['gauge']});
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+
+      var data = google.visualization.arrayToDataTable([
+        ['Label', 'Value'],
+        ['Carros', 0],
+        ['Motos', 0],
+      ]);
+
+      var options = {
+        width: 400, height: 200,
+        redFrom: 0, redTo:40,
+        yellowFrom: 40, yellowTo: 60,
+        greenFrom:60, greenTo: 100,
+        minorTicks: 10,
+        min:-9,
+        max:2000
+      };
+
+      var chart = new google.visualization.Gauge(document.getElementById('div_grafico'));
+
+      chart.draw(data, options);
+
+      setInterval(function() {
+        data.setValue(0, 1, 40 + Math.round(60 * Math.random()));
+        chart.draw(data, options);
+      }, 5000);
+      setInterval(function() {
+        data.setValue(1, 1, 40 + Math.round(60 * Math.random()));
+        chart.draw(data, options);
+      }, 1000);
+    }
+  </script>
+</head>
+<body>
+
+
+    
+  <div id="div_configuracao" class="configuracao">
+
+    <center> <img src="perfil.png" alt="" width="100px" height="100px" style="margin-top: 50px"> </center><br><br><br>
+    <ul>
+      <li> <a href="dashboard.html"><img src="icone_painel.png" alt=""> Painel de controle</li></a> <br>
+      <li> <a href="perfil.html"><img src="icone_perfil.png" alt=""> Perfil</li></a> <br>
+      <li> <a href="graficos.html"><img src="icone_grafico.png" alt=""> Gráficos</li></a> <br>
+      <li> <a href="suporte.html"><img src="icone_suporte.png" alt=""> Suporte</li></a> <br>
+      <li> <a href=""><img src="icone_sair.png" alt=""> Sair</li></a>
+    </ul>
+  </div>
+
+
+
+  <div class="tela_total">
+
+
+      <div class="nome_painel">
+        <center><h3>PAINEL DE CONTROLE</h3></center>
+      </div>
+      
+      <div class="ganho_diario">
+        GANHO DIARIO <br>
+        <img src="icone_cifrao.png" alt=""> <br>
+        <span style="font-size: 20pt; margin-left: 30%;">$100</span> 
+      </div>
+
+
+      <div class="meta_diaria">
+        META DIARIA  <br>
+        <img src="icone_cifrao.png" alt=""> <br>
+        <span style="font-size: 20pt; margin-left: 30%;">$1.500</span>
+      </div>
+      
+
+      <div class="meta_mensal">
+        META MENSAL <br>
+        <img src="icone_meta.png" alt=""> <br>
+        <span style="font-size: 20pt; margin-left: 25%;">$50.000</span>
+      </div>
+      
+
+      <div class="chamados_pendentes">
+        CHAMADOS PENDENTES <br>
+        <img src="icone_chamado.png" alt=""> <br>
+        <span style="font-size: 20pt; margin-left: 40%;">2</span>
+      </div>
+
+
+      <div class="grafico">
+        <img src="gra_redondo.jpg" alt="" style="width: 500px; height: 400px;">
+      </div>
+
+
+
+
+      <div id="div_metrica" class="metrica">
+
+      <center><h2>Capacidade do estacionamento</h2></center>
+
+      <div id="div_grafico" style="width: 500px; height: 200px"></div>
+        <ul>
+          <h4>LEGENDA</h4>
+            <li>Vazio (Vermelho)</li>
+            <li>Quase vazio (Amarelo)</li>
+            <li>Normal (Verde)</li>
+            <li>Quase lotado (Laranja)</li>
+            <li>Lotado (Preto)</li>
+        </ul>
+      </div>
+
+  </div>
+</body>
+</html>
