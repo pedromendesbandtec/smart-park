@@ -50,7 +50,7 @@ function cadastrar() {
             telefone.value != '' &&
             numero.value != '') {
             alert('Você foi cadastrado com sucesso');
-            window.location.href = "../login.smartpark/login_smart.html";
+            window.location.href = "/login";
             // senha.value='';
             // confirmar_senha.value ='';
             // email.value='';

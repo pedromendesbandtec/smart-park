@@ -1,85 +1,105 @@
-html{   
-    overflow-x: hidden;  
-    overflow-y: hidden; 
+html {
+    overflow: hidden;
 }
-body{
+
+body {
     font-family: Arial;
-    background-image: url('/img/login/366762.jpg');
-    margin:0%;
-    padding:0%;
+    background-color: black;
+    margin: 0%;
+    padding: 0%;
 }
-.caixa_login{
-    background-color: rgba(0, 255, 255, 0.582);
+
+.h1 {
+    color: rgb(0, 187, 194);
+    font-size: 40px;
+    font-weight: bold;
     position: relative;
-    margin-left: 28%;
-    margin-right:none;
-    margin-top:120px;   
-    width: 600px ;
-    height: 350px;
-    padding-top:10px;
-    border-radius: 40px;
-    
-}   
-
-
-.caixa_login input{
-    position: relative;    
-    margin-top:10px;
-    width: 400px;
-    height: 40px;
-    margin-left: 100px; 
-    border: none;
-    border-bottom: 1px solid white;
-    background-color: transparent;
-    font-family: Arial;
-    color: white;
-    font-weight: bolder;
-    outline: none;/*Tira a caixa que fica em volta do input*/
-}
-::placeholder{
-    font-family: Arial;
-    color:rgb(255, 255, 255);
-    font-weight: bolder;
-    /* text-align: center; */
+    left: 15vw;
+    top: 17vh;
 }
 
-.caixa_login button{
-    margin-left:150px;
-    width: 300px;  
-    border-radius: 7px;
-    background-color: rgb(154, 221, 221) ;
-    cursor: pointer; 
-    outline: none; /*Tira a caixa que fica em volta do botão*/
+.caixa_login {
+    background-color: whitesmoke;
+    margin-top: 0px;
+    ;
+    width: 40vw;
+    height: 100vh;
+    border-top-right-radius: 90px;
+    /* border-bottom-right-radius: 90px; */
+    animation: andar 1.5s linear;
+    padding-top: 100px;
+    ;
 }
-h1{
-    color: white;
+
+.caixa_login input {
     position: relative;
-    left:40%;
-    padding-bottom:0px;
-
-}
-.div_mensagem{
-    padding: 20px;
-    margin-left:170px;
-    color: rgb(219, 32, 32);
-    font-weight:bold;
-}
-
-.logo img{
-    position: absolute;  
-    left: 50px;
-    top: 50px;
-    width: 70px;
-
-}
-
-.link a{
-    margin-right: 10px;
-    position: relative;
+    left: 2.5vw;
+    margin-bottom: 10px;
+    width: 35vw;
+    height: 4.5vh;
+    border-style: none;
+    border-radius: 10px;
     outline: none;
-}
-.d_mensagem {
     text-align: center;
-    color: rgb(219, 32, 32);
-    font-weight:bold;
+    top: 25vh;
+    font-size: 0.9rem;
+    background-color: transparent;
+    border: black 1px solid;
+    color: black;
+    font-weight: bolder;
+}
+
+.botao {
+    position: relative;
+    font-weight: bolder;
+    font-size: 0.9rem;
+    top: 25vh;
+    left: 15vw;
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: transparent;
+    outline: none;
+    border: black 1px solid;
+    color: rgb(83, 83, 83);
+}
+
+.botao:hover {
+    background-color: rgb(0, 187, 194);
+    border: black .1px solid;
+    color: whitesmoke;
+}
+
+.logofundo {
+    width: 600px;
+    position: absolute;
+    left: 47%;
+    top: 30%;
+}
+
+.home {
+    position: fixed;
+    width: 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.div_mensagem {
+    width: 300px;
+    height: 30px;
+    margin-top: 20vh;
+    margin-left: 130px;
+    text-align: center;
+    color: black;
+}
+
+@keyframes andar {
+    0% {
+        opacity: .5;
+        transform: translateX(-90%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
 }

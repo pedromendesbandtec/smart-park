@@ -1,24 +1,20 @@
 <link rel="stylesheet" href="/css/cadastro.css">
 <script src="/js/cadastro.js"></script>
 
-<div class="logo">
-    <a href="/">
-        <img src="/img/cadastro/seta-voltar-png.png" alt="">
-    </a>
-</div>
-
+<img src="/img/cadastro/smartparking2.png" alt="" class="logofundo">
 
 <div class="caixa_cadastro">
+    <a href="/"><img src="/img/cadastro/home.png" alt="" class="home"></a>
 
-    <h1>Cadastre-se</h1>
+    <span class="titulo">CADASTRE-SE</span> <br>
     <input type="text" id="nome" placeholder="Nome completo"> <br>
-        <input type="text" id="email" placeholder="E-mail"><br>
+        <input type="email" id="email" placeholder="E-mail"><br>
         <input type="text" id="cpf" placeholder="CPF"><br>
         <input type="text" id="telefone" placeholder="Celular"><br>
-        <input type="text" id="endereco"placeholder="Endereço" class="endereco">
-        <input type="text" id="numero" placeholder="Nº" class="n"><br>
-        <input type="password" id="senha" placeholder="Senha"><br>
-        <input type="password" id="confirmar_senha"placeholder="Confirmar senha">
+        <input type="text" id="endereco"placeholder="Endereço" class="endereco" style="width:30vw">
+        <input type="text" id="numero" placeholder="Nº" class="n" style="width:4.7vw"><br>
+        <input type="password" id="senha" placeholder="Senha"style="width:17.3vw; margin-right:0.1vw" >
+        <input type="password" id="confirmar_senha"placeholder="Confirmar senha"style="width:17.3vw">
     <br><br>
     <button onclick="cadastrar()" class="botao"> Cadastrar </button>
     <div id="mensagem" class="div_mensagem"></div>
