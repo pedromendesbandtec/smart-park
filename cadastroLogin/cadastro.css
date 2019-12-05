@@ -1,0 +1,107 @@
+body{
+    
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    
+}
+html{
+    font-family:Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+h1{
+    color: aliceblue;
+}
+.titulo{
+    color: rgb(0, 187, 194);
+    font-size: 40px;
+    font-weight: bold;
+    position: relative;
+    left: 9vw;
+    top: 17vh;
+}
+
+.caixa_cadastro{
+    background-color:whitesmoke;
+    width: 40vw;
+    height:100vh;
+    border-top-right-radius: 90px;
+    /* border-bottom-right-radius: 90px; */
+    animation: andar 1.5s linear;
+    
+    
+}
+
+.caixa_cadastro input{
+    position: relative;
+    left: 2.5vw;
+    margin-bottom: 10px;
+    width: 35vw;
+    height: 4.5vh;
+    border-style:none;
+    border-radius: 10px;
+    outline:none;
+    text-align: center;
+    top: 25vh;
+    font-size: 0.9rem;
+    background-color:transparent;
+    border:black 1px solid ;
+    color: black;
+    font-weight: bolder;
+    
+}
+
+.botao{
+    position: relative;
+    font-weight:bolder;
+    font-size: 0.9rem;
+    top: 25vh;
+    left:15vw;
+    width: 150px;
+    height: 30px;
+    border-radius:10px;
+    background-color: transparent;
+    outline: none;
+    border: black 1px solid;
+    color: rgb(83, 83, 83);
+}
+
+.botao:hover{
+    background-color: rgb(0, 187, 194);
+    border: black .1px solid;
+    color: whitesmoke;
+    }
+
+.logofundo{
+    width: 600px;
+    position: absolute;   
+    left:47%;
+    top: 30%;
+}
+
+.home{
+    position: absolute;
+    width: 50px;
+    margin-left:20px;
+    margin-top:20px;
+}
+
+.div_mensagem{
+    width: 300px;
+    height:30px;
+    margin-top: 30vh;
+    margin-left:130px;
+    text-align: center;
+    color: black;
+}
+
+@keyframes andar{
+    0%{
+        opacity:.5;
+        transform: translateX(-90%);
+    }100%{
+        opacity:1;
+        transform: translateX(0%);
+    }
+}
