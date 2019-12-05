@@ -7,6 +7,7 @@ body {
     padding: 0;
     font-size: 15px;
     background: #f1f2f6;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .configuracao {
@@ -128,27 +129,61 @@ body {
     float: left;
     border: groove #55efc4;
     border-radius: 4px;
-    width: 60%;
-    height: 410px;
+    width: 68%;
+    height: 420px;
     margin-top: 30px;
     margin-left: 30px;
     padding: 5px;
     background: #ffffff;
 }
 
-.metrica {
-    float: right;
-    border: groove #55efc4;
-    border-radius: 4px;
-    margin: 30px 50px 0px 0px;
-    padding: 10px;
-    width: 400px;
-    height: 400px;
-    background-color: white;
+.grafico_cor {
+    position: absolute;
+    float: left;
+    width: 3%;
+    height: 22.3px;
+    margin-top: 248px;
+    margin-left: 225px;
+    padding: 5px;
+    background: #ff0000;
+    display: none;
 }
 
-.metrica ul {
-    list-style: none;
+.vagas {
+    float: left;
+    border: groove #55efc4;
+    border-radius: 4px;
+    width: 20%;
+    height: 80px;
+    margin-top: 130px;
+    margin-left: 22px;
+    padding: 5px;
+    background: #dff9fb;
+    font-size: 16pt;
+}
+
+.vagas #ocu {
+    font-size: 25pt;
+}
+
+.vagas_2 {
+    float: left;
+    border: groove #55efc4;
+    border-radius: 4px;
+    width: 20%;
+    height: 80px;
     margin-top: 50px;
-    margin-left: 50px;
+    margin-left: 22px;
+    padding: 5px;
+    background: #dff9fb;
+    font-size: 16pt;
+}
+
+.vagas_2 #liv {
+    font-size: 25pt;
+}
+
+.muda_cor {
+    background-color: red;
+    float: center;
 }
