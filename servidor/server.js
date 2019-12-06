@@ -4,7 +4,7 @@ const session = require("express-session");
 const bodyparser = require("body-parser");
 const path = require("path");
 const login = require("./models/login");
-const dados_arduino = require("./models/dados_arduino");
+//const dados_arduino = require("./models/dados_arduino");
 const app = express();
 const port = 8080;
 
@@ -37,9 +37,9 @@ app.post("/logar", (req, res) => {
     })
 });
 
-app.post("/dados_arduino", (req, res) => {
-    dados_arduino().then(result => res.send(result));
-});
+//app.post("/dados_arduino", (req, res) => {
+//    dados_arduino().then(result => res.send(result));
+//});
 
 app.use(express.static(path.join(__dirname + "/public")));
 
