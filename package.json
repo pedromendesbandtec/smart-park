@@ -3,7 +3,7 @@
     "version": "0.0.1",
     "private": true,
     "scripts": {
-        "start": "node ./servidor/bin/www",
+        "start": "node ./servidor/server.js",
         "postinstall": "cd servidor && npm install"
     }
 }
