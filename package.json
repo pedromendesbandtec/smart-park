@@ -1,0 +1,9 @@
+{
+    "name": "Smart-Parking",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "start": "node ./servidor/bin/www",
+        "postinstall": "cd servidor && npm install"
+    }
+}
