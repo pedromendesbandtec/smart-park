@@ -1,0 +1,177 @@
+html{
+    scroll-behavior: smooth; /* Rolagem da página em um estilo suave*/
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+
+header {
+    position: fixed;
+    top: 0;
+}
+
+a{
+    color: white;
+    margin-top: 27px;
+}
+a:hover{ /*Função de ao passar o cursor mudará a coloração*/
+    color: rgb(0, 187, 194);
+}
+
+.logo {
+    position: absolute; /*É tipo uma função de flutuar o objeto a frente de tudo*/
+    left: 0;
+    top: 0;
+}
+.menu2 {
+    margin-right: 40px;
+    font-size: 22px;
+}
+
+.menu {
+    width:100VW;
+    height: 80px;
+    background-color: black;
+}
+
+.menu ul{
+    float: left;
+    height: 30px;
+    margin-top: 27px;
+    width: 50vw; /*"vw" é unidade de medida referente a tela*/
+    margin-left: 25vw;
+}
+
+.menu li{
+    margin-top: auto;
+    width: auto;
+    margin-left: 7vw;
+    color: white;
+    display: inline-block;
+    font-size: 22px;
+}
+
+.slide-cont {
+    width: auto; /*Largura da div em relação ao conteúdo*/
+    height: auto; /*Altura da div em relação ao conteúdo*/
+    margin-top: 100px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 0; 
+    overflow: hidden;/*Função de ocultar o estouro da rolagem*/
+}
+
+.slide-cont ul {
+    display: flex;
+    padding: 0;
+    width: 300%;/*O tamanho total em relação ao conteudo da lista*/
+
+    animation: car  10s/*delay*/ infinite/*duration*/ alternate linear/*direction*/;
+}
+
+.slide-cont li {
+    width: 100%;
+    list-style: none;
+
+}
+
+.slide-cont img {
+    width: 100%;
+}
+
+@keyframes car {
+    0% {margin-left: 0;}
+    23% {margin-left: 0;}/*Tempo da 1ª imagem*/
+    39% {margin-left: -100%;}
+    73% {margin-left: -100%;}/*Tempo da 2ª imagem*/
+    89% {margin-left: -200%;}
+    100% {margin-left: -200%;}/*Tempo da 3ª imagem*/
+}
+
+.Text-empresa{
+    height: 500px;
+}
+.Text-empresa  h1{
+    color: rgb(0, 187, 194);
+    font-size: 50px;
+}
+
+.Text-empresa p{
+    width: 60%;
+    text-align: center;
+    margin-left: 25%;
+    font-size: 20pt;
+}
+
+
+.Text-portifolio h1{
+    color: #00bbc2;
+    font-size: 50px;
+}
+
+.Text-portifolio p{
+    width: 60%;
+    text-align: center;
+    margin-left: 20%;
+    font-size: 20pt;
+}
+.text_portifolio1 {
+    margin-top: 120px;
+    font-size: 20pt;
+    margin-left: 100px;
+    
+}
+
+.trabalho1{
+    float:right; 
+    margin-right:5%;
+}
+
+.text_portifolio2 {
+    margin-top: 260px;
+    font-size: 20pt;
+    margin-left: 50px;
+    
+}
+
+.trabalho2{
+    float: left;; 
+    margin-left:5%;
+    margin-top: 160px;
+
+}
+.Text-contato p{
+    width: 60%;
+    text-align: center;
+    margin-left: 25%;
+    font-size: 20pt;
+}
+
+.Text-contato h1{
+    color: rgb(0, 187, 194);
+    font-size: 50px; 
+}
+.Text-contato{
+    margin-top: 180px;;
+}
+.contato{
+    margin-top: 60px;
+}
+
+.rodape{
+    height: 150px;
+    margin-top: 50px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+.rodape p{
+    font-size: 16pt;
+    margin: 0 0 12px 0;
+}
+.rodape button:hover{
+    color: rgb(0, 187, 194);
+}
