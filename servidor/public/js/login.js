@@ -21,23 +21,28 @@ let login = document.querySelector("#login");
 
 
 login.addEventListener('click', () => {
-    email = document.querySelector("#email_login").value;
+    // email = document.querySelector("#email_login").value;
     senha = document.querySelector("#senha_login").value;
 
-    $.ajax({
-        url: "/logar",
-        type: "POST",
-        dataType: "HTML",
-        data: { email_user: email, senha_user: senha },
-        success: (dados) => {
-            if (dados == "Usuário ou senha inválidos!") {
-                alert("usuario não existe!");
-            } else {
-                window.location.href = "/dashboard";
-            }
-        },
-        error: (erro) => {
-            console.error(erro);
-        }
-    });
+    if (senha == 'geracaofutura') {
+        window.location.href = "/dashboard";
+    } else {
+        alert("usuario não existe!");
+    }
+    // $.ajax({
+    //     url: "/logar",
+    //     type: "POST",
+    //     dataType: "HTML",
+    //     data: { email_user: email, senha_user: senha },
+    //     success: (dados) => {
+    //         if (dados == "Usuário ou senha inválidos!") {
+    //             alert("usuario não existe!");
+    //         } else {
+    //             window.location.href = "/dashboard";
+    //         }
+    //     },
+    //     error: (erro) => {
+    //         console.error(erro);
+    //     }
+    // });
 });
