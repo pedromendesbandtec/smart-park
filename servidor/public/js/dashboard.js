@@ -42,6 +42,6 @@ function repeticao() {
 setInterval(() => {
     x = x + 15;
     repeticao();
-}, 15000);
+}, 25000);
 
 window.onload = repeticao()
